@@ -63,7 +63,6 @@
         "scale": 2500,
         "projection": "EPSG:28992",
         "dpi": 72 },
-		,
     "legend": {
       "name": "Legenda",
       "classes": [
