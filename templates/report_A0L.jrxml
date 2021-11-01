@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_A0L" pageWidth="3370" pageHeight="2384" orientation="Landscape" columnWidth="3330" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2c01574b-1c9a-4439-8f5e-577d6ca7d87b">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="Titel" class="java.lang.String"/>
+	<parameter name="Omschrijving" class="java.lang.String"/>
+	<parameter name="Schaal" class="java.lang.String"/>
+	<parameter name="mapSubReport" class="java.lang.String"/>
+	<parameter name="legendDataSource" class="net.sf.jasperreports.engine.data.JRTableModelDataSource"/>
+	<parameter name="legendSubReport" class="java.lang.String"/>
+	<parameter name="scalebarSubReport" class="java.lang.String"/>
+	<parameter name="northArrowSubReport" class="java.lang.String"/>
+	<title>
+		<band height="2344" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<subreport>
+				<reportElement x="0" y="30" width="3168" height="2294" uuid="b17a720e-5a94-4186-b386-2be16a3099cd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportExpression><![CDATA[$P{mapSubReport}]]></subreportExpression>
+			</subreport>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="30" width="3168" height="2294" uuid="a3dc0ec0-b7b0-40cf-b4a6-9e36ee9f85a8">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="1151" height="30" uuid="e19a1dae-3580-41f2-9b8c-7329a013af03"/>
+				<textElement textAlignment="Left">
+					<font size="21"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Titel}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame" hAlign="Right">
+				<reportElement stretchType="ElementGroupHeight" x="3241" y="0" width="89" height="30" uuid="4a5752e7-64bd-4566-8838-badbffd5e7a0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["file://logo.png"]]></imageExpression>
+			</image>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Transparent" x="3170" y="30" width="160" height="400" backcolor="#FFFFFF" uuid="b484507e-3e48-4994-8fb9-fe72a800af32">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[$P{legendDataSource}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{legendSubReport}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement mode="Transparent" x="3170" y="2284" width="160" height="40" backcolor="#FFFFFF" uuid="cc3baed9-1605-41b0-8f41-d11ff3a13131">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<subreportExpression><![CDATA[$P{scalebarSubReport}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="3280" y="2234" width="50" height="50" uuid="74b5ec9b-26e4-4d8e-908d-7b9996d5653b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<subreportExpression><![CDATA[$P{northArrowSubReport}]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="true">
+				<reportElement x="3170" y="2214" width="160" height="15" uuid="aeb0e645-402f-4e5e-8c1d-503dd1394a86">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[CONCATENATE("Schaal: 1:",$P{Schaal})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement x="3170" y="2194" width="160" height="15" uuid="52cbba6a-f64f-44b9-877b-7969a61f7dbb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA["Afdrukdatam: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3170" y="1994" width="160" height="200" uuid="448005e7-e178-4100-9e49-837751f53f94">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{Omschrijving}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="2324" width="366" height="15" uuid="cf0c9919-66c1-429b-9d64-4074f9872948">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Copyright " +  (new SimpleDateFormat("yyyy")).format(new Date()) + " - Aan deze print kunnen geen rechten worden ontleend -"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

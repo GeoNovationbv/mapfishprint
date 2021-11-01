@@ -1,0 +1,409 @@
+throwErrorOnExtraParameters: true
+transparentTileErrorColor: 'rgba(78, 78, 255, 125)'
+opaqueTileErrorColor: 'rgba(255, 155, 155, 0)'
+
+templates:
+  A4 landscape: !template
+    reportTemplate: report_A4L.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 802
+        height: 500
+        zoomLevels: !zoomLevels
+          scales: [2500,5000, 10000, 25000, 50000, 100000, 500000]
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg" 
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+
+  A4 portrait: !template
+    reportTemplate: report_A4P.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 555
+        height: 722
+        zoomLevels: !zoomLevels
+          scales: [2500,5000, 10000, 25000, 50000, 100000, 500000]
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg" 
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+
+  A3 landscape: !template
+    reportTemplate: report_A3L.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 989
+        height: 757
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"       
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+
+  A3 portrait: !template
+    reportTemplate: report_A3P.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 802
+        height: 1071
+      legend: !legend {}      
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg" 
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+
+  A2 landscape: !template
+    reportTemplate: report_A2L.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 1482
+        height: 1101
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"       
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+
+  A2 portrait: !template
+    reportTemplate: report_A2P.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 989
+        height: 1594
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+            
+  A1 landscape: !template
+    reportTemplate: report_A1L.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 2182
+        height: 1594
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"       
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+            
+  A1 portrait: !template
+    reportTemplate: report_A1P.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 1482
+        height: 2296
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"       
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+            
+            
+  A0 landscape: !template
+    reportTemplate: report_A0L.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 3168
+        height: 2294
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"       
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+            
+  A0 portrait: !template
+    reportTemplate: report_A0P.jrxml
+    attributes:
+      Titel: !string
+        default: 'KaartViewer print'
+        maxLength: 255
+      Omschrijving: !string
+        default: ''
+        maxLength: 200
+      Schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 2182
+        height: 3280
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg"       
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
