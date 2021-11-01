@@ -1,9 +1,9 @@
 {
     "layout": "A3 landscape",
     "attributes": {
-		"Titel":"Print uit Kaartviewer",
-		"Omschrijving":"De omschrijving bij de gemaakte print",
-		"Schaal":"2500",
+		"titel":"Print uit Kaartviewer",
+		"omschrijving":"De omschrijving bij de gemaakte print",
+		"schaal":"2500",
 		"map": {
         "center":[197411 , 395203],
         "rotation": 0,
