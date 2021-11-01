@@ -30,6 +30,16 @@ templates:
         width: 989
         height: 757
       legend: !legend {}
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 50
+        default:
+          graphic: "file://North_Pointer.svg" 
     processors:
       - !reportBuilder
         directory: '.'
@@ -39,3 +49,7 @@ templates:
         maxWidth: 160
         dpi: 150
         scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
