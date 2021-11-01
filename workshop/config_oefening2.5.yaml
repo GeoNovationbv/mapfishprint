@@ -17,7 +17,7 @@ templates:
         directory: '.'
       - !createMap {}
   A3 landscape: !template
-    reportTemplate: kaartviewer_A3L_opdracht2.4.jrxml
+    reportTemplate: kaartviewer_A3L_opdracht2.5.jrxml
     attributes:
       titel: !string
         default: 'kaartviewer'
