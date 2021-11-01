@@ -19,11 +19,11 @@ templates:
   A3 landscape: !template
     reportTemplate: kaartviewer_A3L_opdracht2.5.jrxml
     attributes:
-      titel: !string
+      Titel: !string
         default: 'kaartviewer'
-      omschrijving: !string
+      Omschrijving: !string
         default: ''
-      schaal: !string
+      Schaal: !string
         default: ''
       map: !map
         maxDpi: 400
