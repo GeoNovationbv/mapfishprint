@@ -1,0 +1,41 @@
+throwErrorOnExtraParameters: true
+transparentTileErrorColor: 'rgba(78, 78, 255, 125)'
+opaqueTileErrorColor: 'rgba(255, 155, 155, 0)'
+
+templates:
+  A4 portrait: !template
+    reportTemplate: report.jrxml
+    attributes:
+      title: !string
+        default: 'Countries'
+      map: !map
+        maxDpi: 400
+        width: 780
+        height: 330
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+  A3 landscape: !template
+    reportTemplate: kaartviewer_A3L_opdracht2.4.jrxml
+    attributes:
+      titel: !string
+        default: 'kaartviewer'
+      omschrijving: !string
+        default: ''
+      schaal: !string
+        default: ''
+      map: !map
+        maxDpi: 400
+        width: 989
+        height: 757
+      legend: !legend {}
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 160
+        dpi: 150
+        scaled: true
