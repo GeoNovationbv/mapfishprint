@@ -17,7 +17,7 @@ templates:
         directory: '.'
       - !createMap {}
   A3 landscape: !template
-    reportTemplate: kaartviewer_A3L_opdracht2.4.jrxml
+    reportTemplate: kaartviewer_A3L_opdracht2.3.jrxml
     attributes:
       titel: !string
         default: 'kaartviewer'
@@ -29,13 +29,7 @@ templates:
         maxDpi: 400
         width: 989
         height: 757
-      legend: !legend {}
     processors:
       - !reportBuilder
         directory: '.'
       - !createMap {}
-      - !prepareLegend # create a datasource for the report with the 'legend' attribute
-        template: legend.jrxml
-        maxWidth: 160
-        dpi: 150
-        scaled: true

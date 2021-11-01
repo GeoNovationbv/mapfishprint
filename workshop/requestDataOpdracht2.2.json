@@ -1,9 +1,6 @@
 {
     "layout": "A3 landscape",
     "attributes": {
-		"titel":"Print uit Kaartviewer",
-		"omschrijving":"De omschrijving bij de gemaakte print",
-		"schaal":"2500",
 		"map": {
         "center":[197411 , 395203],
         "rotation": 0,
@@ -62,17 +59,5 @@
 		}],
         "scale": 2500,
         "projection": "EPSG:28992",
-        "dpi": 72 },
-    "legend": {
-      "name": "Legenda",
-      "classes": [
-        {
-          "name": "Panden",
-          "icons": ["https://geodata.nationaalgeoregister.nl/bag/wms/v1_2-preprod?SERVICE=WMS&language=dut&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=pand&format=image/png&STYLE=bag:pand_status"]
-        },
-		{
-          "name": "Verblijfsobjecten",
-          "icons": ["https://geodata.nationaalgeoregister.nl/bag/wms/v1_2-preprod?SERVICE=WMS&language=dut&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=verblijfsobject&format=image/png&STYLE=bag:verblijfsobject_alt"]
-        }]
-    }}
+        "dpi": 72 }}
 }
