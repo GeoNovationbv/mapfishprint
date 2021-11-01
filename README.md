@@ -1,0 +1,2 @@
+# mapfishprint
+MapFish print templates
