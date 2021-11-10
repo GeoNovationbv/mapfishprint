@@ -97,7 +97,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA["Afdrukdatam: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
+				<textFieldExpression><![CDATA["afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<image scaleImage="FillFrame" hAlign="Right">
 				<reportElement stretchType="ElementGroupHeight" x="713" y="0" width="89" height="30" uuid="28a349d7-a28a-4fe6-bf41-d79236a62f77">

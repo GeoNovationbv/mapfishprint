@@ -82,7 +82,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left"/>
-				<textFieldExpression><![CDATA["Afdrukdatam: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
+				<textFieldExpression><![CDATA["afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="2184" y="3200" width="160" height="15" uuid="88936c28-d023-45b3-96cb-3de1e75b11ca">

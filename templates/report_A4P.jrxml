@@ -104,7 +104,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA["Afdrukdatam: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
+				<textFieldExpression><![CDATA["afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="450" y="782" width="100" height="15" uuid="9c3e3ca0-8704-4e71-81e3-28b4bbf98afa">
