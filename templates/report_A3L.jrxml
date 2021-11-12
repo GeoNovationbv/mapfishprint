@@ -24,7 +24,9 @@
 		<band height="802" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
-				<reportElement x="0" y="0" width="1151" height="30" uuid="b0caed6c-5e5a-4f21-8901-25d5f00f7fd9"/>
+				<reportElement x="0" y="0" width="991" height="30" uuid="b0caed6c-5e5a-4f21-8901-25d5f00f7fd9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left">
 					<font size="21"/>
 				</textElement>
@@ -55,11 +57,11 @@
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 			</rectangle>
-			<image scaleImage="FillFrame" hAlign="Right">
-				<reportElement stretchType="ElementGroupHeight" x="1062" y="0" width="89" height="30" uuid="fac472ea-4ef5-449e-b59f-8cf48e105516">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement stretchType="ElementGroupHeight" x="991" y="0" width="160" height="30" uuid="fac472ea-4ef5-449e-b59f-8cf48e105516">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
