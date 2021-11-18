@@ -48,8 +48,8 @@
 				<dataSourceExpression><![CDATA[$P{legendDataSource}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{legendSubReport}]]></subreportExpression>
 			</subreport>
-			<image scaleImage="RetainShape" hAlign="Right">
-				<reportElement stretchType="ElementGroupHeight" x="395" y="0" width="160" height="30" uuid="e18c017a-2e71-4705-b161-fa55e5e610e2">
+			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
+				<reportElement stretchType="ElementGroupHeight" x="395" y="0" width="160" height="29" uuid="e18c017a-2e71-4705-b161-fa55e5e610e2">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
