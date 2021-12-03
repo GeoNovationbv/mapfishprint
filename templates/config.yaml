@@ -18,8 +18,6 @@ templates:
         maxDpi: 400
         width: 802
         height: 500
-        zoomLevels: !zoomLevels
-          scales: [2500,5000, 10000, 25000, 50000, 100000, 500000]
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -60,8 +58,6 @@ templates:
         maxDpi: 400
         width: 555
         height: 722
-        zoomLevels: !zoomLevels
-          scales: [2500,5000, 10000, 25000, 50000, 100000, 500000]
       legend: !legend {}
       scalebar: !scalebar
         width: 160
