@@ -32,6 +32,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -72,6 +75,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -112,6 +118,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -152,6 +161,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -192,6 +204,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -232,6 +247,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -272,6 +290,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -312,6 +333,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -353,6 +377,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -393,6 +420,9 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
