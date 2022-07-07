@@ -9,7 +9,7 @@
         "center":[201482.56, 367127.08],
         "rotation": 0,
         "longitudeFirst": true,
-        "layers": [{"baseURL":"https://geodata.nationaalgeoregister.nl/bag/wms/v1_2-preprod?",
+        "layers": [{"baseURL":"https://service.pdok.nl/lv/bag/wms/v2_0?",
 			"type":"WMS",
 			"layers":["verblijfsobject"],
 			"styles":["bag:verblijfsobject_alt"],
@@ -19,7 +19,7 @@
                     "TRANSPARENT": true
                 }
         },
-		{"baseURL":"https://geodata.nationaalgeoregister.nl/bag/wms/v1_2-preprod?",
+		{"baseURL":"https://service.pdok.nl/lv/bag/wms/v2_0?",
 			"type":"WMS",
 			"layers":["pand"],
 "styles":["bag:pand_status"],
@@ -30,7 +30,7 @@
                 }
         },
 		{
-			"baseURL":"https://geodata.nationaalgeoregister.nl/tiles/service/wmts",
+			"baseURL":"https://service.pdok.nl/lv/bgt/wmts/v1_0",
 			"type":"WMTS",
 			"requestEncoding":"KVP",
 			"matrixSet":"EPSG:28992",
@@ -58,7 +58,7 @@
 				{"identifier":"16","matrixSize":[65536,65536],"scaleDenominator":187.5,"tileSize":[256,256],"topLeftCorner": [-285401.92,903401.92]}],
 			"version":"1.0.0",
 			"opacity":1,
-			"layer":"bgtpastel",
+			"layer":"pastelvisualisatie",
 			"imageFormat":"image/png"
 		}],
         "scale": 1250,
@@ -69,11 +69,11 @@
       "classes": [
         {
           "name": "Panden",
-          "icons": ["https://geodata.nationaalgeoregister.nl/bag/wms/v1_2-preprod?SERVICE=WMS&language=dut&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=pand&format=image/png&STYLE=bag:pand_status"]
+          "icons": ["https://service.pdok.nl/lv/bag/wms/v2_0/legend/pand/bag:pand_status.png"]
         },
 		{
           "name": "Verblijfsobjecten",
-          "icons": ["https://geodata.nationaalgeoregister.nl/bag/wms/v1_2-preprod?SERVICE=WMS&language=dut&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=verblijfsobject&format=image/png&STYLE=bag:verblijfsobject_alt"]
+          "icons": ["https://service.pdok.nl/lv/bag/wms/v2_0/legend/verblijfsobject/bag:verblijfsobject_alt.png"]
         }]
     }}
 }
