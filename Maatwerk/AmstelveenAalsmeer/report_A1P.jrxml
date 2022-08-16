@@ -13,31 +13,33 @@
 		<band height="2344" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
-				<reportElement x="0" y="0" width="1051" height="30" uuid="7ee69c69-03b1-4d3b-a7ce-403291e4b51b">
+				<reportElement x="0" y="0" width="300" height="24" uuid="7ee69c69-03b1-4d3b-a7ce-403291e4b51b">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font size="21"/>
+					<font size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Titel}]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement x="0" y="30" width="1482" height="2296" uuid="19a7ee9d-6c9b-4204-8023-2de8e488411c">
+				<reportElement x="0" y="24" width="1644" height="2302" uuid="19a7ee9d-6c9b-4204-8023-2de8e488411c">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<subreportExpression><![CDATA[$P{mapSubReport}]]></subreportExpression>
 			</subreport>
 			<rectangle>
-				<reportElement mode="Transparent" x="0" y="30" width="1482" height="2296" uuid="6cde29c8-7f01-47ea-b708-fb4952df5f26">
+				<reportElement mode="Transparent" x="0" y="24" width="1644" height="2302" uuid="6cde29c8-7f01-47ea-b708-fb4952df5f26">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 			</rectangle>
-			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
-				<reportElement stretchType="ElementGroupHeight" x="1484" y="0" width="160" height="29" uuid="635a4117-d8d0-4f6d-91f5-fe0341c198be">
+			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
+				<reportElement stretchType="ElementGroupHeight" x="1484" y="0" width="160" height="23" uuid="635a4117-d8d0-4f6d-91f5-fe0341c198be">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -62,17 +64,19 @@
 				<subreportExpression><![CDATA[$P{legendSubReport}]]></subreportExpression>
 			</subreport>
 			<textField>
-				<reportElement x="1484" y="1989" width="160" height="200" uuid="dbbb83bd-dbf7-4308-805b-36b7282b8dfd">
+				<reportElement x="300" y="0" width="1182" height="24" uuid="dbbb83bd-dbf7-4308-805b-36b7282b8dfd">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
-				<textElement verticalAlignment="Bottom"/>
+				<textElement verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{Omschrijving}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="false">
-				<reportElement x="1484" y="2194" width="160" height="15" uuid="c4b40864-cf1b-4c1d-a06e-b84ef2bc10e3">
+				<reportElement x="1324" y="2324" width="160" height="15" uuid="c4b40864-cf1b-4c1d-a06e-b84ef2bc10e3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -82,7 +86,7 @@
 				<textFieldExpression><![CDATA["Afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="1484" y="2214" width="160" height="15" uuid="d2621af1-cd88-40ca-958b-d1eb9a131d76">
+				<reportElement x="1484" y="2324" width="160" height="15" uuid="d2621af1-cd88-40ca-958b-d1eb9a131d76">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>

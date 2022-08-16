@@ -2,11 +2,11 @@
 {
     "layout": "A4 landscape",
     "attributes": {
-		"Titel": "Titel van de PDF print",
+		"Titel": "Titel van de PDF print Amstelveen",
 		"Schaal": "1250",
-		"Omschrijving": "Titel van de PDF print Titel van de PDF print Titel van de PDF print Titel van de PDF print Titel van de PDF print Titel van de PDF print",
+		"Omschrijving": "Omschrijving bij de PDF print van Amstelveen. Omschrijving bij de PDF print van Amstelveen. Omschrijving bij de PDF print van Amstelveen. Omschrijving bij de PDF print van Amstelveen.",
 		"map": {
-        "center":[201482.56, 367127.08],
+        "center":[117989,479380],
         "rotation": 0,
         "longitudeFirst": true,
         "layers": [{"baseURL":"https://service.pdok.nl/lv/bag/wms/v2_0?",

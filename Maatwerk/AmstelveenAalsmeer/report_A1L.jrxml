@@ -25,29 +25,33 @@
 		<band height="1644" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
-				<reportElement x="0" y="0" width="1151" height="30" uuid="502d3b30-4781-4451-a54e-af74d2408104"/>
+				<reportElement x="0" y="0" width="300" height="24" uuid="502d3b30-4781-4451-a54e-af74d2408104">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left">
-					<font size="21"/>
+					<font size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Titel}]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement x="0" y="30" width="2182" height="1594" uuid="2a8347dd-2520-430f-ae90-76bf2040ab30">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<reportElement x="0" y="24" width="2344" height="1602" uuid="2a8347dd-2520-430f-ae90-76bf2040ab30">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<subreportExpression><![CDATA[$P{mapSubReport}]]></subreportExpression>
 			</subreport>
 			<rectangle>
-				<reportElement mode="Transparent" x="0" y="30" width="2182" height="1594" uuid="7b8100de-e352-4084-9dcb-5d1652f5097c">
+				<reportElement mode="Transparent" x="0" y="24" width="2344" height="1602" uuid="7b8100de-e352-4084-9dcb-5d1652f5097c">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 			</rectangle>
-			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
-				<reportElement stretchType="ElementGroupHeight" x="2184" y="0" width="160" height="29" uuid="db801f71-3666-43c5-b03a-d091b47099fd">
+			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
+				<reportElement stretchType="ElementGroupHeight" x="2184" y="0" width="160" height="23" uuid="db801f71-3666-43c5-b03a-d091b47099fd">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -90,11 +94,11 @@
 				<subreportExpression><![CDATA[$P{northArrowSubReport}]]></subreportExpression>
 			</subreport>
 			<textField isBlankWhenNull="true">
-				<reportElement x="2184" y="1504" width="160" height="15" uuid="4443f972-d9e1-409a-a6f1-56287efcbcd0">
+				<reportElement x="2184" y="1624" width="160" height="15" uuid="4443f972-d9e1-409a-a6f1-56287efcbcd0">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -106,20 +110,20 @@
 				<textFieldExpression><![CDATA[CONCATENATE("Schaal: 1:",$P{Schaal})]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="false">
-				<reportElement x="2184" y="1484" width="160" height="15" uuid="036d49a4-457e-4887-9ddf-7e6b917b1a88">
+				<reportElement x="2024" y="1624" width="160" height="15" uuid="036d49a4-457e-4887-9ddf-7e6b917b1a88">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left"/>
 				<textFieldExpression><![CDATA["Afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="2184" y="1264" width="160" height="200" uuid="14999b44-b209-49bf-a25c-6a99f43a8727">
+				<reportElement x="300" y="0" width="1882" height="24" uuid="14999b44-b209-49bf-a25c-6a99f43a8727">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{Omschrijving}]]></textFieldExpression>

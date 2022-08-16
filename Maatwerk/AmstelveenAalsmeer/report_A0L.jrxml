@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_A0L" pageWidth="3370" pageHeight="2384" orientation="Landscape" columnWidth="3330" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2c01574b-1c9a-4439-8f5e-577d6ca7d87b">
-	<property name="com.jaspersoft.studio.unit." value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<parameter name="Titel" class="java.lang.String"/>
 	<parameter name="Omschrijving" class="java.lang.String"/>
 	<parameter name="Schaal" class="java.lang.String"/>
@@ -22,29 +13,33 @@
 		<band height="2344" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<subreport>
-				<reportElement x="0" y="30" width="3168" height="2294" uuid="b17a720e-5a94-4186-b386-2be16a3099cd">
+				<reportElement x="0" y="24" width="3330" height="2300" uuid="b17a720e-5a94-4186-b386-2be16a3099cd">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<subreportExpression><![CDATA[$P{mapSubReport}]]></subreportExpression>
 			</subreport>
 			<rectangle>
-				<reportElement mode="Transparent" x="0" y="30" width="3168" height="2294" uuid="a3dc0ec0-b7b0-40cf-b4a6-9e36ee9f85a8">
+				<reportElement mode="Transparent" x="0" y="24" width="3330" height="2300" uuid="a3dc0ec0-b7b0-40cf-b4a6-9e36ee9f85a8">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 			</rectangle>
 			<textField>
-				<reportElement x="0" y="0" width="1151" height="30" uuid="e19a1dae-3580-41f2-9b8c-7329a013af03"/>
+				<reportElement x="0" y="0" width="300" height="24" uuid="e19a1dae-3580-41f2-9b8c-7329a013af03">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left">
-					<font size="21"/>
+					<font size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Titel}]]></textFieldExpression>
 			</textField>
-			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
-				<reportElement stretchType="ElementGroupHeight" x="3170" y="0" width="160" height="29" uuid="4a5752e7-64bd-4566-8838-badbffd5e7a0">
+			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
+				<reportElement stretchType="ElementGroupHeight" x="3170" y="0" width="160" height="23" uuid="4a5752e7-64bd-4566-8838-badbffd5e7a0">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -87,7 +82,7 @@
 				<subreportExpression><![CDATA[$P{northArrowSubReport}]]></subreportExpression>
 			</subreport>
 			<textField isBlankWhenNull="true">
-				<reportElement x="3170" y="2214" width="160" height="15" uuid="aeb0e645-402f-4e5e-8c1d-503dd1394a86">
+				<reportElement x="3170" y="2324" width="160" height="15" uuid="aeb0e645-402f-4e5e-8c1d-503dd1394a86">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -103,7 +98,7 @@
 				<textFieldExpression><![CDATA[CONCATENATE("Schaal: 1:",$P{Schaal})]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="false">
-				<reportElement x="3170" y="2194" width="160" height="15" uuid="52cbba6a-f64f-44b9-877b-7969a61f7dbb">
+				<reportElement x="3010" y="2324" width="160" height="15" uuid="52cbba6a-f64f-44b9-877b-7969a61f7dbb">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -113,12 +108,15 @@
 				<textFieldExpression><![CDATA["Afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="3170" y="1994" width="160" height="200" uuid="448005e7-e178-4100-9e49-837751f53f94">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<reportElement x="300" y="0" width="2868" height="24" uuid="448005e7-e178-4100-9e49-837751f53f94">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{Omschrijving}]]></textFieldExpression>
 			</textField>
 			<textField>

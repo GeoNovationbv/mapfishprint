@@ -17,7 +17,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 802
-        height: 500
+        height: 506
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -60,7 +60,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 555
-        height: 722
+        height: 734
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -102,8 +102,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 989
-        height: 757
+        width: 1151
+        height: 763
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -146,7 +146,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 802
-        height: 1071
+        height: 1083
       legend: !legend {}      
       scalebar: !scalebar
         width: 160
@@ -188,8 +188,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 1482
-        height: 1101
+        width: 1644
+        height: 1107
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -231,8 +231,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 989
-        height: 1594
+        width: 1151
+        height: 1600
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -274,8 +274,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 2182
-        height: 1594
+        width: 2344
+        height: 1602
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -317,8 +317,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 1482
-        height: 2296
+        width: 1644
+        height: 2302
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -361,8 +361,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 3168
-        height: 2294
+        width: 3330
+        height: 2300
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -404,8 +404,8 @@ templates:
         default: ''
       map: !map
         maxDpi: 400
-        width: 2182
-        height: 3280
+        width: 2344
+        height: 3286
       legend: !legend {}
       scalebar: !scalebar
         width: 160
