@@ -17,7 +17,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 802
-        height: 506
+        height: 482
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -103,7 +103,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 1151
-        height: 763
+        height: 739
       legend: !legend {}
       scalebar: !scalebar
         width: 160
