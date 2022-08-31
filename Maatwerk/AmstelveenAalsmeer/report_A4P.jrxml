@@ -40,7 +40,7 @@
 				</reportElement>
 			</rectangle>
 			<subreport>
-				<reportElement mode="Transparent" x="395" y="53" width="160" height="500" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFFF" uuid="9adf5954-f822-4591-a6cf-b8978d27d5d3">
+				<reportElement mode="Transparent" x="394" y="53" width="160" height="500" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFFF" uuid="9adf5954-f822-4591-a6cf-b8978d27d5d3">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>

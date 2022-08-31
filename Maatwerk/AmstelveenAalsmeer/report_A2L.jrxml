@@ -51,10 +51,11 @@
 				</reportElement>
 			</rectangle>
 			<subreport overflowType="Stretch">
-				<reportElement mode="Transparent" x="1484" y="30" width="160" height="400" backcolor="#FFFFFF" uuid="007997c9-8c2f-48cf-8905-a6b1f80ac0f7">
+				<reportElement mode="Transparent" x="1483" y="30" width="160" height="400" backcolor="#FFFFFF" uuid="007997c9-8c2f-48cf-8905-a6b1f80ac0f7">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<dataSourceExpression><![CDATA[$P{legendDataSource}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{legendSubReport}]]></subreportExpression>

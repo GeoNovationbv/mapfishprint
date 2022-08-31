@@ -57,7 +57,7 @@
 				<imageExpression><![CDATA["file://logo.png"]]></imageExpression>
 			</image>
 			<subreport overflowType="Stretch">
-				<reportElement mode="Transparent" x="2184" y="30" width="160" height="400" backcolor="#FFFFFF" uuid="6f0eea2c-a0f6-424a-880d-82f6090f6d22">
+				<reportElement mode="Transparent" x="2183" y="30" width="160" height="400" backcolor="#FFFFFF" uuid="6f0eea2c-a0f6-424a-880d-82f6090f6d22">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
