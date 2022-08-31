@@ -189,7 +189,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 1644
-        height: 1107
+        height: 1083
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -232,7 +232,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 1151
-        height: 1600
+        height: 1576
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -275,7 +275,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 2344
-        height: 1602
+        height: 1578
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -318,7 +318,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 1644
-        height: 2302
+        height: 2278
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -362,7 +362,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 3330
-        height: 2300
+        height: 2276
       legend: !legend {}
       scalebar: !scalebar
         width: 160
@@ -405,7 +405,7 @@ templates:
       map: !map
         maxDpi: 400
         width: 2344
-        height: 3286
+        height: 3262
       legend: !legend {}
       scalebar: !scalebar
         width: 160

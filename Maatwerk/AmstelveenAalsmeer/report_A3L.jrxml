@@ -60,11 +60,11 @@
 				</reportElement>
 			</rectangle>
 			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
-				<reportElement stretchType="ElementGroupHeight" x="991" y="0" width="160" height="23" uuid="fac472ea-4ef5-449e-b59f-8cf48e105516">
+				<reportElement stretchType="ElementGroupHeight" x="911" y="0" width="240" height="36" uuid="fac472ea-4ef5-449e-b59f-8cf48e105516">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -127,7 +127,7 @@
 				<textFieldExpression><![CDATA["Copyright " +  (new SimpleDateFormat("yyyy")).format(new Date()) + " - Aan deze print kunnen geen rechten worden ontleend -"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="24" width="990" height="24" uuid="f797b60f-39b3-40e2-a79f-cb8b24940d40">
+				<reportElement x="0" y="24" width="910" height="24" uuid="f797b60f-39b3-40e2-a79f-cb8b24940d40">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>

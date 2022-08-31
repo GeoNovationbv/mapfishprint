@@ -13,7 +13,7 @@
 		<band height="2344" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<subreport>
-				<reportElement x="0" y="24" width="3330" height="2300" uuid="b17a720e-5a94-4186-b386-2be16a3099cd">
+				<reportElement x="0" y="48" width="3330" height="2276" uuid="b17a720e-5a94-4186-b386-2be16a3099cd">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
@@ -21,7 +21,7 @@
 				<subreportExpression><![CDATA[$P{mapSubReport}]]></subreportExpression>
 			</subreport>
 			<rectangle>
-				<reportElement mode="Transparent" x="0" y="24" width="3330" height="2300" uuid="a3dc0ec0-b7b0-40cf-b4a6-9e36ee9f85a8">
+				<reportElement mode="Transparent" x="0" y="48" width="3330" height="2276" uuid="a3dc0ec0-b7b0-40cf-b4a6-9e36ee9f85a8">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
@@ -39,11 +39,11 @@
 				<textFieldExpression><![CDATA[$P{Titel}]]></textFieldExpression>
 			</textField>
 			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
-				<reportElement stretchType="ElementGroupHeight" x="3170" y="0" width="160" height="23" uuid="4a5752e7-64bd-4566-8838-badbffd5e7a0">
+				<reportElement stretchType="ElementGroupHeight" x="3090" y="0" width="240" height="36" uuid="4a5752e7-64bd-4566-8838-badbffd5e7a0">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -54,7 +54,7 @@
 				<imageExpression><![CDATA["file://logo.png"]]></imageExpression>
 			</image>
 			<subreport overflowType="Stretch">
-				<reportElement mode="Transparent" x="3169" y="30" width="160" height="400" backcolor="#FFFFFF" uuid="b484507e-3e48-4994-8fb9-fe72a800af32">
+				<reportElement mode="Transparent" x="3169" y="54" width="160" height="400" backcolor="#FFFFFF" uuid="b484507e-3e48-4994-8fb9-fe72a800af32">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -108,7 +108,7 @@
 				<textFieldExpression><![CDATA["Afdrukdatum: " + (new SimpleDateFormat("dd-MM-yyyy")).format(new Date())]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="0" width="2868" height="24" uuid="448005e7-e178-4100-9e49-837751f53f94">
+				<reportElement x="0" y="24" width="2868" height="24" uuid="448005e7-e178-4100-9e49-837751f53f94">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
