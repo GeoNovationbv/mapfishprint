@@ -14,7 +14,7 @@
 	<title>
 		<band height="802" splitType="Stretch">
 			<textField>
-				<reportElement mode="Transparent" x="0" y="0" width="395" height="24" forecolor="#000000" uuid="b0caed6c-5e5a-4f21-8901-25d5f00f7fd9">
+				<reportElement mode="Transparent" x="0" y="0" width="234" height="24" forecolor="#000000" uuid="b0caed6c-5e5a-4f21-8901-25d5f00f7fd9">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -50,7 +50,7 @@
 				<subreportExpression><![CDATA[$P{legendSubReport}]]></subreportExpression>
 			</subreport>
 			<image scaleImage="RetainShape" hAlign="Right" onErrorType="Blank">
-				<reportElement stretchType="ElementGroupHeight" x="395" y="0" width="160" height="24" uuid="e18c017a-2e71-4705-b161-fa55e5e610e2">
+				<reportElement stretchType="ElementGroupHeight" x="235" y="0" width="320" height="48" uuid="e18c017a-2e71-4705-b161-fa55e5e610e2">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -65,7 +65,7 @@
 				<imageExpression><![CDATA["file://logo.png"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="0" y="24" width="555" height="24" uuid="cd7f2f77-bc8d-4896-bde0-e58efd4755a6">
+				<reportElement x="0" y="24" width="234" height="24" uuid="cd7f2f77-bc8d-4896-bde0-e58efd4755a6">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
