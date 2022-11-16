@@ -1,0 +1,27 @@
+throwErrorOnExtraParameters: true
+transparentTileErrorColor: 'rgba(78, 78, 255, 125)'
+opaqueTileErrorColor: 'rgba(255, 155, 155, 0)'
+
+templates:
+  wordprint_500x350: !template
+    reportTemplate: Image_500x350.jrxml
+    attributes:
+      map: !map
+        maxDpi: 150
+        width: 499
+        height: 349
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "line"
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !createScalebar {}
+    
