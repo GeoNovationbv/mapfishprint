@@ -24,4 +24,26 @@ templates:
         maxWidth: 4000
       - !createMap {}
       - !createScalebar {}
+      
+  wordprint_682x790: !template
+    reportTemplate: Image_682x790.jrxml
+    attributes:
+      map: !map
+        maxDpi: 150
+        width: 681
+        height: 789
+      scalebar: !scalebar
+        width: 160
+        height: 40
+        default:
+          align: "right"
+          type: "line"
+    processors:
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !createScalebar {}
     
