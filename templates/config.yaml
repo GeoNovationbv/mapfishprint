@@ -196,7 +196,7 @@ templates:
         maxHeight: 512
         maxWidth: 512
         tileBufferHeight: 5
-        tileBufferWisth: 5
+        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -241,7 +241,7 @@ templates:
         maxHeight: 512
         maxWidth: 512
         tileBufferHeight: 5
-        tileBufferWisth: 5
+        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -286,7 +286,7 @@ templates:
         maxHeight: 512
         maxWidth: 512
         tileBufferHeight: 5
-        tileBufferWisth: 5
+        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -331,7 +331,7 @@ templates:
         maxHeight: 512
         maxWidth: 512
         tileBufferHeight: 5
-        tileBufferWisth: 5
+        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -377,7 +377,7 @@ templates:
         maxHeight: 512
         maxWidth: 512
         tileBufferHeight: 5
-        tileBufferWisth: 5
+        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -422,7 +422,7 @@ templates:
         maxHeight: 512
         maxWidth: 512
         tileBufferHeight: 5
-        tileBufferWisth: 5
+        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
