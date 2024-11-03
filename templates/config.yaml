@@ -192,11 +192,6 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
-      - !setTiledWms
-        maxHeight: 512
-        maxWidth: 512
-        tileBufferHeight: 5
-        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -237,11 +232,6 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
-      - !setTiledWms
-        maxHeight: 512
-        maxWidth: 512
-        tileBufferHeight: 5
-        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -282,11 +272,6 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
-      - !setTiledWms
-        maxHeight: 512
-        maxWidth: 512
-        tileBufferHeight: 5
-        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -327,11 +312,6 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
-      - !setTiledWms
-        maxHeight: 512
-        maxWidth: 512
-        tileBufferHeight: 5
-        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -373,11 +353,6 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
-      - !setTiledWms
-        maxHeight: 512
-        maxWidth: 512
-        tileBufferHeight: 5
-        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
@@ -418,11 +393,6 @@ templates:
     processors:
       - !reportBuilder
         directory: '.'
-      - !setTiledWms
-        maxHeight: 512
-        maxWidth: 512
-        tileBufferHeight: 5
-        tileBufferWidth: 5
       - !createMap {}
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
