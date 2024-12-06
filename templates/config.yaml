@@ -419,14 +419,11 @@ templates:
       northArrowDef: !northArrow
         size: 50
         default:
-          graphic: "file://North_Pointer.svg"       
+          graphic: "file://North_Pointer.svg"
     processors:
       - !reportBuilder
         directory: '.'
       - !setTiledWms
-        matchers:
-          - !dnsMatch
-            host: service.pdok.nl
         maxHeight: 4000
         maxWidth: 4000
       - !createMap {}
