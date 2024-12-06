@@ -193,6 +193,12 @@ templates:
       - !reportBuilder
         directory: '.'
       - !createMap {}
+      - !setTiledWms
+        matchers:
+          - !dnsMatch
+            host: service.pdok.nl
+        maxHeight: 4000
+        maxWidth: 4000
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
         maxWidth: 160
@@ -233,6 +239,12 @@ templates:
       - !reportBuilder
         directory: '.'
       - !createMap {}
+      - !setTiledWms
+        matchers:
+          - !dnsMatch
+            host: service.pdok.nl
+        maxHeight: 4000
+        maxWidth: 4000
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
         maxWidth: 160
@@ -273,6 +285,12 @@ templates:
       - !reportBuilder
         directory: '.'
       - !createMap {}
+      - !setTiledWms
+        matchers:
+          - !dnsMatch
+            host: service.pdok.nl
+        maxHeight: 4000
+        maxWidth: 4000
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
         maxWidth: 160
@@ -313,6 +331,12 @@ templates:
       - !reportBuilder
         directory: '.'
       - !createMap {}
+      - !setTiledWms
+        matchers:
+          - !dnsMatch
+            host: service.pdok.nl
+        maxHeight: 4000
+        maxWidth: 4000
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
         maxWidth: 160
@@ -354,6 +378,12 @@ templates:
       - !reportBuilder
         directory: '.'
       - !createMap {}
+      - !setTiledWms
+        matchers:
+          - !dnsMatch
+            host: service.pdok.nl
+        maxHeight: 4000
+        maxWidth: 4000
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
         maxWidth: 160
@@ -394,6 +424,12 @@ templates:
       - !reportBuilder
         directory: '.'
       - !createMap {}
+      - !setTiledWms
+        matchers:
+          - !dnsMatch
+            host: service.pdok.nl
+        maxHeight: 4000
+        maxWidth: 4000
       - !prepareLegend # create a datasource for the report with the 'legend' attribute
         template: legend.jrxml
         maxWidth: 160
