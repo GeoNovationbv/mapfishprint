@@ -193,9 +193,6 @@ templates:
       - !reportBuilder
         directory: '.'
       - !setTiledWms
-        matchers:
-          - !dnsMatch
-            host: service.pdok.nl
         maxHeight: 4000
         maxWidth: 4000
       - !createMap {}
@@ -239,9 +236,6 @@ templates:
       - !reportBuilder
         directory: '.'
       - !setTiledWms
-        matchers:
-          - !dnsMatch
-            host: service.pdok.nl
         maxHeight: 4000
         maxWidth: 4000
       - !createMap {}
@@ -285,9 +279,6 @@ templates:
       - !reportBuilder
         directory: '.'
       - !setTiledWms
-        matchers:
-          - !dnsMatch
-            host: service.pdok.nl
         maxHeight: 4000
         maxWidth: 4000
       - !createMap {}
@@ -331,9 +322,6 @@ templates:
       - !reportBuilder
         directory: '.'
       - !setTiledWms
-        matchers:
-          - !dnsMatch
-            host: service.pdok.nl
         maxHeight: 4000
         maxWidth: 4000
       - !createMap {}        
@@ -378,9 +366,6 @@ templates:
       - !reportBuilder
         directory: '.'
       - !setTiledWms
-        matchers:
-          - !dnsMatch
-            host: service.pdok.nl
         maxHeight: 4000
         maxWidth: 4000
       - !createMap {}
