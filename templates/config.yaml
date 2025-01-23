@@ -30,6 +30,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg" 
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !createMap {}
@@ -70,6 +79,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg" 
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !createMap {}
@@ -110,6 +128,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"       
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !createMap {}
@@ -150,6 +177,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg" 
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !createMap {}
@@ -190,6 +226,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"       
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
@@ -233,6 +278,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
@@ -276,6 +330,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"       
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
@@ -319,6 +382,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"       
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
@@ -363,6 +435,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"       
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
@@ -406,6 +487,15 @@ templates:
         default:
           graphic: "file://North_Pointer.svg"
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host: 
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
