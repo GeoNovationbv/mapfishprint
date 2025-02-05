@@ -1,0 +1,591 @@
+throwErrorOnExtraParameters: true
+transparentTileErrorColor: 'rgba(78, 78, 255, 125)'
+opaqueTileErrorColor: 'rgba(255, 155, 155, 0)'
+
+templates:
+
+  rapportafbeelding 17x10cm: !template
+    reportTemplate: image_17x10cm.jrxml
+    attributes:
+      Bijschrift: !string
+        default: ''
+        maxLength: 1024
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 409 
+        height: 260  
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 99 
+        height: 23
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 49
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg" 
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 72
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+
+  A3 landscape CAD-style: !template
+    reportTemplate: report_A3L_cad.jrxml
+    attributes:
+      Opdrachtgever: !string
+        default: ''
+        maxLength: 255
+      Project: !string
+        default: ''
+        maxLength: 255
+      Projectcode: !string
+        default: ''
+        maxLength: 255
+      Onderdeel: !string
+        default: ''
+        maxLength: 255
+      Tekeningnummer: !string
+        default: ''
+        maxLength: 255
+      Versie: !string
+        default: ''
+        maxLength: 255
+      Status: !string
+        default: ''
+        maxLength: 255
+      Getekend: !string
+        default: ''
+        maxLength: 255
+      dd_Getekend: !string
+        default: ''
+        maxLength: 255
+      Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      dd_Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      Schaal: !string
+        default: ''
+        maxLength: 255
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 1126
+        height: 561
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 261
+        height: 37
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 110
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg"
+      overviewMap: !overviewMap
+        width: 240
+        height: 220
+        maxDpi: 400
+        zoomFactor: 10
+        # style: "style"
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 196
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+      - !createOverviewMap {}
+      
+  A3 portrait CAD-style: !template
+    reportTemplate: report_A3P_cad.jrxml
+    attributes:
+      Opdrachtgever: !string
+        default: ''
+        maxLength: 255
+      Project: !string
+        default: ''
+        maxLength: 255
+      Projectcode: !string
+        default: ''
+        maxLength: 255
+      Onderdeel: !string
+        default: ''
+        maxLength: 255
+      Tekeningnummer: !string
+        default: ''
+        maxLength: 255
+      Versie: !string
+        default: ''
+        maxLength: 255
+      Status: !string
+        default: ''
+        maxLength: 255
+      Getekend: !string
+        default: ''
+        maxLength: 255
+      dd_Getekend: !string
+        default: ''
+        maxLength: 255
+      Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      dd_Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      Schaal: !string
+        default: ''
+        maxLength: 255
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 618
+        height: 900
+      legend: !legend {}      
+      scalebar: !scalebar
+        width: 261
+        height: 37
+        default:
+          align: "right"
+          type: "bar"
+      northArrowDef: !northArrow
+        size: 110
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg"
+      overviewMap: !overviewMap
+        width: 280
+        height: 220
+        maxDpi: 400
+        zoomFactor: 10
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 159
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+      - !createOverviewMap {}       
+  
+  A1 landscape CAD-style: !template
+    reportTemplate: report_A1L_cad.jrxml
+    attributes:
+      Opdrachtgever: !string
+        default: ''
+        maxLength: 255
+      Project: !string
+        default: ''
+        maxLength: 255
+      Projectcode: !string
+        default: ''
+        maxLength: 255
+      Onderdeel: !string
+        default: ''
+        maxLength: 255
+      Tekeningnummer: !string
+        default: ''
+        maxLength: 255
+      Versie: !string
+        default: ''
+        maxLength: 255
+      Status: !string
+        default: ''
+        maxLength: 255
+      Getekend: !string
+        default: ''
+        maxLength: 255
+      dd_Getekend: !string
+        default: ''
+        maxLength: 255
+      Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      dd_Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      Schaal: !string
+        default: ''
+        maxLength: 255
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 1789
+        height: 1643
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 261
+        height: 37
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 155
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg"  
+      overviewMap: !overviewMap
+        width: 488
+        height: 475
+        maxDpi: 400
+        zoomFactor: 10
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 488
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+      - !createOverviewMap {}
+                    
+  A1 portrait CAD-style: !template
+    reportTemplate: report_A1P_cad.jrxml
+    attributes:
+      Opdrachtgever: !string
+        default: ''
+        maxLength: 255
+      Project: !string
+        default: ''
+        maxLength: 255
+      Projectcode: !string
+        default: ''
+        maxLength: 255
+      Onderdeel: !string
+        default: ''
+        maxLength: 255
+      Tekeningnummer: !string
+        default: ''
+        maxLength: 255
+      Versie: !string
+        default: ''
+        maxLength: 255
+      Status: !string
+        default: ''
+        maxLength: 255
+      Getekend: !string
+        default: ''
+        maxLength: 255      
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      dd_Getekend: !string
+        default: ''
+        maxLength: 255
+      Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      dd_Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      Schaal: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 1110
+        height: 2321
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 261
+        height: 37
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 155
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg"
+      overviewMap: !overviewMap
+        width: 488
+        height: 475
+        maxDpi: 400
+        zoomFactor: 10
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 488
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+      - !createOverviewMap {}       
+  
+           
+  A0 landscape CAD-style: !template
+    reportTemplate: report_A0L_cad.jrxml
+    attributes:
+      Opdrachtgever: !string
+        default: ''
+        maxLength: 255
+      Project: !string
+        default: ''
+        maxLength: 255
+      Projectcode: !string
+        default: ''
+        maxLength: 255
+      Onderdeel: !string
+        default: ''
+        maxLength: 255
+      Tekeningnummer: !string
+        default: ''
+        maxLength: 255
+      Versie: !string
+        default: ''
+        maxLength: 255
+      Status: !string
+        default: ''
+        maxLength: 255
+      Getekend: !string
+        default: ''
+        maxLength: 255
+      dd_Getekend: !string
+        default: ''
+        maxLength: 255
+      Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      dd_Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      Schaal: !string
+        default: ''
+        maxLength: 255
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 2743
+        height: 2327
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 261
+        height: 37
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 155
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg" 
+      overviewMap: !overviewMap
+        width: 488
+        height: 475
+        maxDpi: 400
+        zoomFactor: 10
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 488
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+      - !createOverviewMap {}      
+            
+  A0 portrait CAD-style: !template
+    reportTemplate: report_A0P_cad.jrxml
+    attributes:
+      Opdrachtgever: !string
+        default: ''
+        maxLength: 255
+      Project: !string
+        default: ''
+        maxLength: 255
+      Projectcode: !string
+        default: ''
+        maxLength: 255
+      Onderwerp: !string
+        default: ''
+        maxLength: 255
+      Tekeningnummer: !string
+        default: ''
+        maxLength: 255
+      Versie: !string
+        default: ''
+        maxLength: 255
+      Status: !string
+        default: ''
+        maxLength: 255
+      Getekend: !string
+        default: ''
+        maxLength: 255
+      dd_Getekend: !string
+        default: ''
+        maxLength: 255
+      Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      dd_Goedgekeurd: !string
+        default: ''
+        maxLength: 255
+      Schaal: !string
+        default: ''
+        maxLength: 255
+      kv_website_name: !string
+        default: ''
+        maxLength: 255
+      map: !map
+        maxDpi: 400
+        width: 1789
+        height: 3306
+      legend: !legend {}
+      scalebar: !scalebar
+        width: 261
+        height: 37
+        default:
+          align: "right"
+          type: "bar_sub"
+      northArrowDef: !northArrow
+        size: 155
+        default:
+          graphic: "file://North_Pointer_DAGnl.svg"
+      overviewMap: !overviewMap
+        width: 488
+        height: 475
+        maxDpi: 400
+        zoomFactor: 10
+    processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !ipMatch
+                ip: 20.31.28.15
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
+      - !reportBuilder
+        directory: '.'
+      - !setTiledWms
+        maxHeight: 4000
+        maxWidth: 4000
+      - !createMap {}
+      - !prepareLegend # create a datasource for the report with the 'legend' attribute
+        template: legend.jrxml
+        maxWidth: 488
+        dpi: 150
+        scaled: true
+      - !createScalebar {}
+      - !createNorthArrow
+        inputMapper:
+            northArrowDef: northArrow
+      - !createOverviewMap {}      

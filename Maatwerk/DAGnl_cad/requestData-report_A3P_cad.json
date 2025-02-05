@@ -1,0 +1,648 @@
+{
+  "layout": "A3 portrait CAD-style",
+  "attributes": {
+    "Opdrachtgever": "Opdrachtgever",
+    "Project": "Project",
+    "Projectcode": "code",
+    "Onderdeel": "Onderdeel",
+    "Tekeningnummer": "1111",
+    "Versie": "0.0.1",
+    "Status": "in progress",
+    "Getekend": "Rob",
+    "dd_Getekend": "28-11-2024",
+    "Goedgekeurd": "Ja",
+    "dd_Goedgekeurd": "28-11-2024",
+    "Schaal": "1250",
+	"kv_website_name": "DAGnl%20Projectenkaart",
+    "map": {
+      "center": [
+        201482.56,
+        367127.08
+      ],
+      "rotation": 0,
+      "longitudeFirst": true,
+      "layers": [
+        {
+          "baseURL": "https://service.pdok.nl/lv/bag/wms/v2_0?",
+          "type": "WMS",
+          "layers": [
+            "verblijfsobject"
+          ],
+          "styles": [
+            "bag:verblijfsobject_alt"
+          ],
+          "imageFormat": "image/png",
+          "customParams": {
+            "TRANSPARENT": true
+          }
+        },
+        {
+          "baseURL": "https://service.pdok.nl/lv/bag/wms/v2_0?",
+          "type": "WMS",
+          "layers": [
+            "pand"
+          ],
+          "styles": [
+            "bag:pand_status"
+          ],
+          "imageFormat": "image/png",
+          "customParams": {
+            "TRANSPARENT": true
+          }
+        },
+        {
+          "baseURL": "https://service.pdok.nl/lv/bgt/wmts/v1_0",
+          "type": "WMTS",
+          "requestEncoding": "KVP",
+          "matrixSet": "EPSG:28992",
+          "matrices": [
+            {
+              "identifier": "00",
+              "matrixSize": [
+                1,
+                1
+              ],
+              "scaleDenominator": 12288000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "01",
+              "matrixSize": [
+                2,
+                2
+              ],
+              "scaleDenominator": 6144000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "02",
+              "matrixSize": [
+                4,
+                4
+              ],
+              "scaleDenominator": 3072000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "03",
+              "matrixSize": [
+                8,
+                8
+              ],
+              "scaleDenominator": 1536000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "04",
+              "matrixSize": [
+                16,
+                16
+              ],
+              "scaleDenominator": 768000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "05",
+              "matrixSize": [
+                32,
+                32
+              ],
+              "scaleDenominator": 384000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "06",
+              "matrixSize": [
+                64,
+                64
+              ],
+              "scaleDenominator": 192000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "07",
+              "matrixSize": [
+                128,
+                128
+              ],
+              "scaleDenominator": 96000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "08",
+              "matrixSize": [
+                256,
+                256
+              ],
+              "scaleDenominator": 48000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "09",
+              "matrixSize": [
+                512,
+                512
+              ],
+              "scaleDenominator": 24000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "10",
+              "matrixSize": [
+                1024,
+                1024
+              ],
+              "scaleDenominator": 12000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "11",
+              "matrixSize": [
+                2048,
+                2048
+              ],
+              "scaleDenominator": 6000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "12",
+              "matrixSize": [
+                4096,
+                4096
+              ],
+              "scaleDenominator": 3000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "13",
+              "matrixSize": [
+                8192,
+                8192
+              ],
+              "scaleDenominator": 1500,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "14",
+              "matrixSize": [
+                16384,
+                16384
+              ],
+              "scaleDenominator": 750,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "15",
+              "matrixSize": [
+                32768,
+                32768
+              ],
+              "scaleDenominator": 375,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "16",
+              "matrixSize": [
+                65536,
+                65536
+              ],
+              "scaleDenominator": 187.5,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "opacity": 1,
+          "layer": "pastelvisualisatie",
+          "imageFormat": "image/png"
+        }
+      ],
+      "scale": 1250,
+      "projection": "EPSG:28992",
+      "dpi": 72
+    },
+    "legend": {
+      "name": "Legenda",
+      "classes": [
+        {
+          "name": "Panden",
+          "icons": [
+            "https://service.pdok.nl/lv/bag/wms/v2_0/legend/pand/bag:pand_status.png"
+          ]
+        },
+        {
+          "name": "Verblijfsobjecten",
+          "icons": [
+            "https://service.pdok.nl/lv/bag/wms/v2_0/legend/verblijfsobject/bag:verblijfsobject_alt.png"
+          ]
+        }
+      ]
+    },
+        "overviewMap": {
+		"layers": [
+			{
+          "baseURL": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0",
+          "type": "WMTS",
+          "requestEncoding": "KVP",
+          "matrixSet": "EPSG:28992",
+          "matrices": [
+            {
+              "identifier": "00",
+              "matrixSize": [
+                1,
+                1
+              ],
+              "scaleDenominator": 12288000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "01",
+              "matrixSize": [
+                2,
+                2
+              ],
+              "scaleDenominator": 6144000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "02",
+              "matrixSize": [
+                4,
+                4
+              ],
+              "scaleDenominator": 3072000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "03",
+              "matrixSize": [
+                8,
+                8
+              ],
+              "scaleDenominator": 1536000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "04",
+              "matrixSize": [
+                16,
+                16
+              ],
+              "scaleDenominator": 768000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "05",
+              "matrixSize": [
+                32,
+                32
+              ],
+              "scaleDenominator": 384000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "06",
+              "matrixSize": [
+                64,
+                64
+              ],
+              "scaleDenominator": 192000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "07",
+              "matrixSize": [
+                128,
+                128
+              ],
+              "scaleDenominator": 96000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "08",
+              "matrixSize": [
+                256,
+                256
+              ],
+              "scaleDenominator": 48000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "09",
+              "matrixSize": [
+                512,
+                512
+              ],
+              "scaleDenominator": 24000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "10",
+              "matrixSize": [
+                1024,
+                1024
+              ],
+              "scaleDenominator": 12000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "11",
+              "matrixSize": [
+                2048,
+                2048
+              ],
+              "scaleDenominator": 6000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "12",
+              "matrixSize": [
+                4096,
+                4096
+              ],
+              "scaleDenominator": 3000,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "13",
+              "matrixSize": [
+                8192,
+                8192
+              ],
+              "scaleDenominator": 1500,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "14",
+              "matrixSize": [
+                16384,
+                16384
+              ],
+              "scaleDenominator": 750,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "15",
+              "matrixSize": [
+                32768,
+                32768
+              ],
+              "scaleDenominator": 375,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            },
+            {
+              "identifier": "16",
+              "matrixSize": [
+                65536,
+                65536
+              ],
+              "scaleDenominator": 187.5,
+              "tileSize": [
+                256,
+                256
+              ],
+              "topLeftCorner": [
+                -285401.92,
+                903401.92
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "opacity": 0.75,
+          "layer": "water",
+          "imageFormat": "image/png"
+        }
+		]
+	}
+  }
+}
