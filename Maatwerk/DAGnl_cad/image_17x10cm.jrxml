@@ -17,7 +17,7 @@
 	<parameter name="legendSubReport" class="java.lang.String"/>
 	<parameter name="scalebarSubReport" class="java.lang.String"/>
 	<parameter name="northArrowSubReport" class="java.lang.String"/>
-	<parameter name="kv_website_name" class="java.lang.String"/>
+	<field name="naam_website" class="java.lang.String"/>
 	<title>
 		<band height="283" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -95,8 +95,8 @@
 				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="Left">
 					<font size="6"/>
 				</textElement>
-				<textFieldExpression><![CDATA[CONCATENATE("https://kaartviewer.dagnl.nl?@",$P{kv_website_name})]]></textFieldExpression>
-				<hyperlinkReferenceExpression><![CDATA[CONCATENATE("https://kaartviewer.dagnl.nl?@",$P{kv_website_name})]]></hyperlinkReferenceExpression>
+				<textFieldExpression><![CDATA["https://kaartviewer.dagnl.nl/?@"+$F{naam_website}+"&v=5"]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://kaartviewer.dagnl.nl/?"]]></hyperlinkReferenceExpression>
 			</textField>
 		</band>
 	</title>
