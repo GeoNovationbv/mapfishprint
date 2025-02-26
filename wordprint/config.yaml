@@ -17,6 +17,15 @@ templates:
           align: "right"
           type: "line"
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host:
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+    
       - !reportBuilder
         directory: '.'
       - !setTiledWms
@@ -39,6 +48,15 @@ templates:
           align: "right"
           type: "line"
     processors:
+      - !configureHttpRequests
+        httpProcessors:
+          - !forwardHeaders
+            headers:
+              - Authorization
+            matchers:
+              - !dnsMatch
+                host:
+                pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
       - !setTiledWms
