@@ -35,8 +35,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
@@ -124,8 +124,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
@@ -213,8 +213,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
@@ -302,8 +302,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
@@ -391,8 +391,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
@@ -481,8 +481,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
@@ -570,8 +570,8 @@ templates:
             headers:
               - Authorization
             matchers:
-              - !ipMatch
-                ip: 20.31.28.15
+              - !dnsMatch
+                host:
                 pathRegex: /admin/v2/kaartviewerapi/bookmark.+
       - !reportBuilder
         directory: '.'
